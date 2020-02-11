@@ -2,6 +2,7 @@ body {
   font-family: 'Helvetica Neue',Helvetica,sans-serif;
   margin: 0;
   color: #fff;
+  background-color:black;
 }
 
 nav {
@@ -59,6 +60,7 @@ section {
   background-image: url("../img/img-section2.jpg");
   background-repeat: no-repeat;
   background-color: #fff;
+
 }
 
 #contact {
@@ -80,5 +82,71 @@ a {
 }
 
 .majuscule {
-	color: #ff0000;
+  color: #ff0000;
+}
+
+
+
+
+
+
+@media all and (orientation: portrait){
+
+#header{
+  margin-top: 50px;
+}
+.logo
+{
+  opacity:0;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 57%;
+  width: 97%;
+  margin-left: -200px;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 0 0 4px 4px;
+  background-color: #000;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 30px;
+  top:200%;
+}
+a {
+  display: block;
+  width: 100px;
+  text-decoration: none;
+  color: inherit;
+}
+.text1
+{
+    margin-top:-300px;
+}
+.text2
+{
+  margin-top: 3000px;
+}
+.text3
+{
+  margin-top: 4500px;
+}
+.NRS
+{
+  margin-top: 1500px;
+}
+p
+{
+  font-size:22px;
+}
 }
