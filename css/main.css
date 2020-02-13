@@ -63,7 +63,7 @@ section {
 
 }
 
-.v
+.liens
 {
   display: flex;
   justify-content: space-between;
@@ -205,7 +205,7 @@ p
 {
   font-size:20px;
 }
-.v
+.liens
 {
   display: flex;
   margin-top:1000px;
