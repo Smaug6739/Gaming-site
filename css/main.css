@@ -130,7 +130,7 @@ aside
 }
 .logo
 {
-  opacity:0;
+  display: none;
 }
 nav {
   position: absolute;
