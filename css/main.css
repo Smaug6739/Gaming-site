@@ -63,11 +63,6 @@ section {
 
 }
 
-.v
-{
-  display: flex;
-  justify-content: space-between;
-}
 
 
 .Twiter
@@ -116,7 +111,13 @@ a {
 .majuscule {
   color: #ff0000;
 }
+aside
+{
+  display: flex;
+  justify-content: space-between;
 
+
+}
 
 
 
@@ -163,7 +164,7 @@ a {
 }
 .text1
 {
-    margin-top:320px;
+    margin-top:200px;
 }
 .text2
 {
@@ -209,8 +210,7 @@ p
 {
   display: flex;
   margin-top:1000px;
-  display: flex;
-  flex-direction:column;
+  justify-content: space-between;
   margin-right:35%;
 
 
