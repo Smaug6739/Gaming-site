@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/page2.css" type="text/css" media="screen" />
+      <title>French Gaming Family</title>
+      </head>
+
+
+
+<body translate="no">
+<!-- CONTENU -->
+<main>
+<header id="header">
+<img src="img/top-banner.jpg" style="max-width: 100%;" alt="FGF">
+<h1>Acueil</h1>
+	  </header>
+<section>
+<div>
+<img src="img2/image1.png">
+<img src="img2/image2.png">
+<img src="img2/image3.png">
+<img src="img2/image4.jpg">
+<img src="img2/image5.jpg">
+<img src="img2/image6.jpg">
+<img src="img2/image7.jpg">
+<img src="img2/image8.jpg">
+
+</div>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+
+  const button = new Crate({
+    server: '502528973012467723',
+    channel: '502757399476568074',
+    shard: 'https://disweb.dashflo.net'
+  })
+  
+  button.notify('French Gaming Family ')
+
+
+setInterval(() => {
+    button.options.color = "#000000".replace(/0/g, () => {
+          return (~~(Math.random() * 16)).toString(16)
+        })
+  }, 750)
+
+</script>
+<script type="text/javascript">
+	function handleClickLink(event) {
+	const block = event.target.dataset.block;
+	console.log(block)
+	document.getElementById(block).scrollIntoView({ behavior: 'smooth'});
+	}
+
+	document.querySelectorAll('.link').forEach((elem) => {
+	elem.addEventListener('click', handleClickLink);
+	});
+</script>
+</body>
+</html>
