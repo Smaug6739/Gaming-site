@@ -131,7 +131,8 @@ aside
 .logoM
 {
   max-width: 160%;
-  margin-left:75%;
+  margin-left:65%;
+  margin-top:-50%;
   display: flex;
 }
 #header{
