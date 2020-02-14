@@ -130,9 +130,11 @@ aside
 @media all and (orientation: portrait){
 .logoM
 {
-  max-width: 160%;
-  margin-left:50%;
+  max-width: 170%;
+  margin-left:-180px;
   display: flex;
+  margin-top:+350px;
+  
 }
 #header{
   margin-top: 50px;
@@ -171,7 +173,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.text1
+.presentation
 {
     margin-top:550px;
 }
@@ -179,9 +181,9 @@ a {
 {
   margin-top: 1050px;
 }
-.text3
+.contact
 {
-  margin-top: 700px;
+  margin-top: 600px;
 }
 .NRS1
 {
@@ -216,20 +218,24 @@ p
 {
   font-size:20px;
 }
-.v1
+#social {
+  background-image: url("../img/img-section2.jpg");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  margin-left:-170%;
+}
+.pictogrammes1
 {
   display: flex;
-  margin-top:875px;
+  margin-top:830px;
   justify-content: center;
-  margin-right:35%;
 
 }
-.v2
+.pictogrammes2
 {
   display: flex;
-  margin-top:1000px;
+  margin-top:830px;
   justify-content: center;
-  margin-right:35%;
 
 }
 #NRS
