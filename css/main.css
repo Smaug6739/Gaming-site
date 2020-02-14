@@ -130,7 +130,7 @@ aside
 @media all and (orientation: portrait){
 .logoM
 {
-  max-width: 120%;
+  max-width: 160%;
   margin-left:75%;
   display: flex;
 }
