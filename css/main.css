@@ -63,10 +63,7 @@ section {
   background-color: #fff;
 
 }
-.logoM
-{
-  display: none;
-}
+
 
 
 
@@ -128,14 +125,7 @@ aside
 
 
 @media all and (orientation: portrait){
-.logoM
-{
-  max-width: 170%;
-  margin-left:-180px;
-  display: flex;
-  margin-top:+350px;
-  
-}
+
 #header{
   margin-top: 50px;
 }
