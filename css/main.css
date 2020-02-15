@@ -48,7 +48,7 @@ section {
   align-items: center;
   justify-content: center;
   height: 100%;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 #prez {
@@ -62,7 +62,7 @@ section {
   background-image: url("../img/img-section2.jpg");
   background-repeat: no-repeat;
   background-color: #fff;
-
+  
 }
 
 
@@ -91,6 +91,11 @@ section {
 .Discord
 {
   max-width: 100%;
+}
+.page2
+{
+display:flex;
+justify-content:center;
 }
 
 #contact {
@@ -175,7 +180,7 @@ a {
 
 .contact
 {
-  margin-top: 600px;
+  margin-top: 400px;
 }
 
 .Twiter
@@ -208,13 +213,13 @@ p
   font-size:20px;
 }
 #social {
-  
-  margin-left:-170%;
+text-align:center;
 }
+.page2
+{
+justify-content:center;
 
-
-
-
+}
 .pictogrammes1
 {
   display: flex;
@@ -231,7 +236,8 @@ p
 }
 #NRS
 {
-  opacity:0;
+display:none;
+    
 }
 
 }
