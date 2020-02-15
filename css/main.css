@@ -64,7 +64,11 @@ section {
   background-color: #fff;
   
 }
-
+#contact {
+  background-image: url("../img/img-section3.jpg");
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
 
 
 
@@ -98,16 +102,9 @@ display:flex;
 justify-content:center;
 }
 
-#contact {
-  background-image: url("../img/img-section3.jpg");
-  background-repeat: no-repeat;
-  background-color: #fff;
-}
 
-#on {
-  position: absolute;
-  opacity: 0;
-}
+
+
 
 a {
   display: block;
@@ -180,7 +177,7 @@ a {
 
 .contact
 {
-  margin-top: 400px;
+  margin-top: 200px;
 }
 
 .Twiter
