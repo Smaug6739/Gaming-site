@@ -126,8 +126,12 @@ aside
 
 
 @media all and (orientation: portrait){
-
-#header{
+body
+{
+    width:auto;
+    height:auto;
+}
+.header{
   margin-top: 50px;
 }
 .logo
@@ -166,20 +170,14 @@ a {
 }
 .presentation
 {
-    margin-top:550px;
+    margin-top:auto;
 }
-.text2
-{
-  margin-top: 1050px;
-}
+
 .contact
 {
   margin-top: 600px;
 }
-.NRS1
-{
-  margin-top: 1015px;
-}
+
 .Twiter
 {
   max-width: 50%;
@@ -210,11 +208,13 @@ p
   font-size:20px;
 }
 #social {
-  background-image: url("../img/img-section2.jpg");
-  background-repeat: no-repeat;
-  background-color: #fff;
+  
   margin-left:-170%;
 }
+
+
+
+
 .pictogrammes1
 {
   display: flex;
