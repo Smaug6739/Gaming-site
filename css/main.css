@@ -215,19 +215,19 @@ text-align:center;
 .page2
 {
 justify-content:center;
+margin-top:-20px;
 
 }
 .pictogrammes1
 {
-  display: flex;
-  margin-top:830px;
+   display: flex;
+    margin-top:260%;
   justify-content: center;
-
 }
 .pictogrammes2
 {
   display: flex;
-  margin-top:830px;
+    margin-top:260%;
   justify-content: center;
 
 }
