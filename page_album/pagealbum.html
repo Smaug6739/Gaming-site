@@ -15,7 +15,7 @@
 <header id="header">
 <img src="img/top-banner.jpg" style="max-width: 100%;" alt="FGF">
 <h1>Acueil</h1>
-    </header>
+	  </header>
 <section>
 <div>
 <img src="img2/image1.png">
@@ -52,15 +52,15 @@ setInterval(() => {
 
 </script>
 <script type="text/javascript">
-  function handleClickLink(event) {
-  const block = event.target.dataset.block;
-  console.log(block)
-  document.getElementById(block).scrollIntoView({ behavior: 'smooth'});
-  }
+	function handleClickLink(event) {
+	const block = event.target.dataset.block;
+	console.log(block)
+	document.getElementById(block).scrollIntoView({ behavior: 'smooth'});
+	}
 
-  document.querySelectorAll('.link').forEach((elem) => {
-  elem.addEventListener('click', handleClickLink);
-  });
+	document.querySelectorAll('.link').forEach((elem) => {
+	elem.addEventListener('click', handleClickLink);
+	});
 </script>
 </body>
 </html>
