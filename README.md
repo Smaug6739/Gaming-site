@@ -1,2 +1,3 @@
 # French-Gaming-Family
-Le site de french-gaming-family est egalement heberger sur planethoster
+Le site de french-gaming-family est aussi heberger sur planethoster
+La
