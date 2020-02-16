@@ -49,11 +49,4 @@ body
 .header{
   margin-top: 50px;
 }
-img
-{
-	max-width: 350px;
-	display:flex;
-justify-content:center;
-    
-}
 }
