@@ -4,9 +4,9 @@ session_start();
 
 <!DOCTYPE html>
 <html>
-    <head>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>Rasp-Home</title>
-        <meta charset="utf-8">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Anton|Dancing+Script|Exo|Lobster|Macondo+Swash+Caps|Pacifico|Shadows+Into+Light&display=swap" rel="stylesheet">

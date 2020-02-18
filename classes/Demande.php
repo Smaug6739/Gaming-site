@@ -108,6 +108,34 @@ class Demande {
         }
         return false;
     }
+    
+    public function achieve() {
+        global $db;
+        
+        $id = $this->_id;
+        $sql = "UPDATE demandes SET statut = 1 WHERE id = $id";
+        $req = $db->prepare($sql);
+        
+        if($req->execute()) {
+            return true;
+        }
+        error_log("SQL ERROR : $sql", 0);
+        return false;
+    }
+    
+    public function delete() {
+        global $db;
+        
+        $id = $this->_id;
+        $sql = "DELETE FROM demandes WHERE id = $id";
+        $req = $db->prepare($sql);
+        
+        if($req->execute()) {
+            return true;
+        }
+        error_log("SQL ERROR : $sql", 0);
+        return false;
+    }
 
     public static function getAll() {
         global $db;
