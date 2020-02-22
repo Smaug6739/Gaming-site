@@ -137,10 +137,23 @@ class Demande {
         return false;
     }
 
-    public static function getAll() {
+    public static function getPending() {
         global $db;
 
-        $sql = "SELECT id FROM demandes WHERE statut = 0";
+        $sql = "SELECT id FROM demandes WHERE statut = 0 ORDER BY date_insert ASC";
+        $req = $db->prepare($sql);
+
+        if($req->execute()) {
+            $res = $req->fetchAll(PDO::FETCH_OBJ);
+            return $res;
+        }
+        return false;
+    }
+    
+    public static function getAchieved() {
+        global $db;
+
+        $sql = "SELECT id FROM demandes WHERE statut = 1 ORDER BY date_insert DESC";
         $req = $db->prepare($sql);
 
         if($req->execute()) {
@@ -150,3 +163,4 @@ class Demande {
         return false;
     }
 }
+

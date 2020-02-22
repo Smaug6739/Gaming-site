@@ -7,6 +7,7 @@ include "../models/db.php";
  */
 class User {
 
+    private $_id;
     private $_login;
     private $_pass;
     private $_logged = false;
@@ -14,19 +15,27 @@ class User {
     function __construct($login, $pass) {
         global $db;
 
-        $sql = "SELECT login FROM users WHERE login = '$login'";
+        $sql = "SELECT id, login, pass FROM users WHERE login = '$login'";
         $req = $db->prepare($sql);
 
         if($req->execute()) {
 
             $res = $req->fetch(PDO::FETCH_OBJ);
-
+            $this->_id = $res->id;
             $this->_login = $res->login;
             $this->_pass = $pass;
 
         } else {
             error_log("SQL ERROR : $sql", 0);
         }
+    }
+    
+    public function getId() {
+        return $this->_id;
+    }
+
+    public function setId($id) {
+        $this->_id = $id;
     }
 
     public function getLogin() {
@@ -63,7 +72,6 @@ class User {
 
         if($req->execute()) {
             $res = $req->fetch(PDO::FETCH_OBJ);
-            error_log($res->pass, 0);
             if(password_verify($this->_pass, $res->pass)) {
                 return true;
             }
@@ -72,5 +80,33 @@ class User {
             error_log("SQL ERROR : $sql", 0);
         }
 
+    }
+    
+    public static function create($pseudo, $hash) {
+        global $db;
+        
+        $sql = "INSERT INTO users (login, pass) VALUES('$pseudo', '$hash')";
+        $req = $db->prepare($sql);
+        
+        error_log("SQL DEBUG : $sql", 0);
+        
+        if($req->execute()) {
+            return true;
+        }
+        error_log("SQL ERROR : $sql", 0);
+        return false;
+    }
+    
+    public static function update($id, $pseudo, $hash) {
+        global $db;
+        
+        $sql = "UPDATE users SET login = '$pseudo', pass = '$hash' WHERE id = $id";
+        $req = $db->prepare($sql);
+        
+        if($req->execute()) {
+            return true;
+        }
+        error_log("SQL ERROR : $sql", 0);
+        return false;
     }
 }

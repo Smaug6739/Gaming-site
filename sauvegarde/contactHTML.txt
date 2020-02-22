@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="../public/css/contact.css" type="text/css" media="screen" />
         <title>French Gaming Family</title>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+       
     </head>
 
     <body>
@@ -20,7 +20,7 @@
                     <legend>Vos coordonnées</legend>
                     <div class="form-group">
                         <label for="in_pseudo">Votre pseudo discord</label>
-                        <input type="text" class="form-control" id="in_pseudo" name="pseudo" placeholder="User#0000">
+                        <input type="text" class="form-control" id="in_pseudo" name="pseudo" placeholder="Votre pseudo Discord: User#0000">
                     </div>
                     <div class="form-group">
                         <label for="in_mail">Votre adresse mail</label>
@@ -35,13 +35,12 @@
                         <textarea name="demande" id="ta_demande" cols="40" rows="4"> </textarea>
                     </div>  
       
-                </fieldset> <div class="g-recaptcha" data-sitekey="6Lc2VNsUAAAAACUt1YxoQYnV2KuxwWumlQETVM_E"></div><br>
-
+                </fieldset>
                 <button id="btn_submit" type="button" class="btn btn-primary">Envoyer</button>
                 <div id="notif">
 
                 </div>
-
+                
             </form>
         </section>
 

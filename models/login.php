@@ -23,6 +23,6 @@ if (isset($_POST["submit"])) {
             unset($_SESSION);
         }
 
-        header("Location: http://french-gaming-family.yj.fr/admin.php");
+        header("Location: http://french-gaming-family.yj.fr/admin/");
     }
 }
