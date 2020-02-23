@@ -96,7 +96,11 @@ section {
 {
   max-width: 100%;
 }
-
+.page2
+{
+display:flex;
+justify-content:center;
+}
 
 
 
@@ -170,7 +174,11 @@ a {
     margin-top:auto;
 }
 
-
+.contact
+{
+  margin-top: 200px;
+  margin-left:-18%;
+}
 
 .Twiter
 {
@@ -223,11 +231,5 @@ text-align:center;
 display:none;
     
 }
-aside
-{
-  display: flex;
-  justify-content: center;
 
-
-}
 }
