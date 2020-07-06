@@ -15,7 +15,6 @@ $(document).ready(function() {
             $(this).css("border", "2px solid red")
         }
     })
-
     $(document).on("keyup", "#ta_demande", function(e) {
         if($(this).val().length > 3) {
             $(this).css("border", "2px solid green")
@@ -23,7 +22,6 @@ $(document).ready(function() {
             $(this).css("border", "2px solid red")
         }
     })
-
     $(document).on("click touchstart", "#btn_submit", function(e) {
 
         let pseudo = ""
